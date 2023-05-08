@@ -1,0 +1,11 @@
+name: Less Than or Equal Operator Example
+on: push
+jobs:
+ check_number:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Check if number is less than or equal to limit
+       run: |
+         result=$((7<= 19 ? "true" : "false"))
+         echo "Is 7 less than or equal to 19? Result: ${{ 7 <= 19 }}"
+         echo "Is 7 less than or equal to 19? Result (using shell): $result"
