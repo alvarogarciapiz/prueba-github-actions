@@ -5,8 +5,6 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - name: step 1
-     env:
-      API_KEY: XXXXXXXXXXXX
-     run: echo "The API key is:${{env.API_KEY}}"
+     run: echo "The API key is:${{secrets.API_KEY}}"
    - name: step 2
-     run: echo "The API key is:${{env.API_KEY}}" 
+     run: echo "The API key is:${{screts.API_KEY}}" 
