@@ -12,3 +12,4 @@ jobs:
   runs-on: ubuntu-latest
   steps:
   - name: step 1
+    run: echo "The API key is:$API_KEY"
